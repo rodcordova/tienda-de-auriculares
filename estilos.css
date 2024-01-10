@@ -33,6 +33,9 @@ html{
 body{
     background: #f9f9f9;
 }
+
+/*************************************/
+/* MENU */
 header{
     position: fixed;
     top: 0;
@@ -75,7 +78,9 @@ header .navbar a:hover{
     color:var(--limon);
     transition: 0.5s;
 }
-/* SECTION*/
+
+/*************************************/
+/*  INICIO section*/
 section{
     min-height: 100vh;
     padding: 0 9%;
@@ -126,6 +131,9 @@ section{
     width: 50vw;
     animation: float 2s linear infinite;
 }
+
+/*************************************/
+/* DETALLES section*/
 .heading{
     text-align: center;
     background: var(--verde);
@@ -165,7 +173,9 @@ section{
     color: #666;
     padding: 1rem 0;
 }
-/* ACERCA DE*/
+
+/*************************************/
+/* ACERCA DE section*/
 .acerca_de{
     background:url(./images/fondo_2.png) no-repeat ;
     background-size:cover ;
@@ -200,7 +210,9 @@ section{
 .acerca_de .columna .content .button a:last-child{
     margin-left:2rem ;
 }
-/* SUSCRIBETE*/
+
+/*************************************/
+/* SUSCRIBETE div*/
 .suscribete{
     text-align: center;
     padding: 5rem 1rem;
@@ -249,7 +261,8 @@ section{
     color: var(--limon);
 }
 
-/* OPINIONES*/
+/*************************************/
+/* OPINIONES section*/
 .opiniones .caja-contenedor .caja{
     background: white;
     margin: 1rem;
@@ -293,8 +306,9 @@ section{
     padding: 1rem;
 
 }
-/* PRECIOS*/
 
+/*************************************/
+/* PRECIOS section*/
 .precios .caja-contenedor .caja{
     flex: 1 1 28rem;
     margin: 1rem;
@@ -341,7 +355,9 @@ section{
 .precios .caja-contenedor .caja ul li .fa-circle-xmark{
     color: red;
 }
-/* CONTACTOS*/
+
+/*************************************/
+/* CONTACTOS section*/
 .contactos {
     display: flex;
     align-items: center;
@@ -382,18 +398,18 @@ section{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
     text-transform: none;
 } 
-.contactos form .inputcaja textarea{
-    resize: none;
-    height: 13rem;
-}
 .contactos form .inputcaja label{
-
     top: 1.7rem;
     left: 0;
     font-size: 1.7rem;
     color: #666;
     transition: .2s linear;
 }
+.contactos form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+}
+
 .contactos form .inputcaja input:focus ~ label,
 .contactos form .inputcaja input:valid ~ label,
 .contactos form .inputcaja textarea:focus ~ label,
@@ -403,6 +419,8 @@ section{
     color: var(--limon);
 }
 
+/*************************************/
+/* FOOTER div*/
 .footer{
     background: url(./images/footer-fondo.png);
     padding-top: 3rem;
@@ -414,7 +432,7 @@ section{
     flex: 1 1 25rem;
     margin: 2rem;
 }
-.footer .caja-contenedor h3{
+.footer .caja-contenedor .caja h3{
     font-size: 2.5rem;
     padding: 1rem 0;
     color: wheat;
@@ -463,6 +481,7 @@ section{
     padding: 2.5rem 1rem;
     text-align: center;
 }
+
 @keyframes float{
     0% ,100%{
         transform: translateY(0rem);
@@ -471,20 +490,19 @@ section{
         transform: translateY(3.5rem);
     }
 }
-
-
 @media (max-width:1200px){
     html{
         font-size: 55%;
     }
 }
-@media (max-width:990px){
+/*@media (max-width:990px){
     section{
         padding: 0 3%;
         padding-top:7.5rem ;
         padding-bottom: 2rem;
     }
 }
+*/
 
 @media  (max-width:768px){
     header label{
@@ -541,7 +559,7 @@ section{
     }
 }
 
-@media  (max-width:458px){
+/*@media  (max-width:458px){
     html{
         font-size: 49%;
     }
@@ -554,4 +572,4 @@ section{
     .acerca_de .columna .content .buttona:last-child{
         margin: 1rem 0;
     }
-}
+}*/
